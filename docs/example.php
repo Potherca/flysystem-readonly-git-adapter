@@ -10,6 +10,8 @@ $root = '/path/to/repo'
 $gitUrl = 'https://github.com/gitonomy/gitlib.git';
 $repository = Gitonomy\Git\Admin::cloneTo($root, $gitUrl, false); /*false = non-bare repo*/
 
+/* Creating the $repository outside of the Decorator kind of defeats the purpose ... */
+
 /* Generic Adapter/FlySystem Code */
 $adapter = new Local($root);
 $repository = new Repository($root, $repositoryOptions);
