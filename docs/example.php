@@ -4,19 +4,24 @@ use Gitonomy\Git\Repository;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
 use Potherca\Flysystem\Git\LocalAdapterGitDecorator;
+use Potherca\Flysystem\Adapter\CloneRemoteGitToLocal;
 
 /* Git Adapter Specific Code */
 $root = '/path/to/repo'
 $gitUrl = 'https://github.com/gitonomy/gitlib.git';
-$repository = Gitonomy\Git\Admin::cloneTo($root, $gitUrl, false); /*false = non-bare repo*/
-
-/* Creating the $repository outside of the Decorator kind of defeats the purpose ... */
 
 /* Generic Adapter/FlySystem Code */
+// =============================================================================
 $adapter = new Local($root);
-$repository = new Repository($root, $repositoryOptions);
-$decoratedAdapter = new LocalAdapterGitDecorator($adapter, $repository);
+$decoratedAdapter = new LocalAdapterGitDecorator($adapter, $gitUrl);
 $filesystem = new Filesystem($decoratedAdapter);
+
+// -----------------------------------------------------------------------------
+//                                  OR
+// -----------------------------------------------------------------------------
+$adapter = new CloneRemoteGitToLocal($root, $gitUrl);
+$filesystem = new Filesystem($adapter);
+// =============================================================================
 
 // Use the Flysystem as you normally would.
 
