@@ -1,5 +1,7 @@
 # POC-flysystem-readonly-git
 
+[![](http://img.shields.io/badge/Project%20Stage-Research-orange.svg)](http://bl.ocks.org/potherca/raw/a2ae67caa3863a299ba0/)
+
 Flysystem Adapter Decorator to work locally with a remote git repository
 
 This is a proof-of-concept and architecture/design repository for 
