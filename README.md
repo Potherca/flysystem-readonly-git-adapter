@@ -1,4 +1,4 @@
-# POC-flysystem-readonly-git
+# [Flysystem-git-readonly](https://github.com/potherca/flysystem-git-readonly)
 
 [![](http://img.shields.io/badge/Project%20Stage-Research-orange.svg)](http://bl.ocks.org/potherca/raw/a2ae67caa3863a299ba0/)
 
@@ -9,4 +9,4 @@ This is a proof-of-concept and architecture/design repository for
 [Mike van Riel](https://twitter.com/mvriel/) and [Potherca](http://pother.ca) 
 had in regards to creating a (readonly) git adapter for [FlySystem](flysystem.thephpleague.com)
 
-Comments are welcome, just [create an issue](https://github.com/potherca/POC-flysystem-readonly-git/issues/new)
+Comments are welcome, just [create an issue](https://github.com/potherca/flysystem-git-readonly/issues/new)
