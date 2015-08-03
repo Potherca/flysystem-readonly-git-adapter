@@ -1,4 +1,4 @@
-# [Flysystem-git-readonly](https://github.com/potherca/flysystem-readonly-git-adapter)
+# [Flysystem read-only git adapter](https://github.com/potherca/flysystem-readonly-git-adapter)
 
 [![](http://img.shields.io/badge/Project%20Stage-Research-orange.svg)](http://bl.ocks.org/potherca/raw/a2ae67caa3863a299ba0/)
 
